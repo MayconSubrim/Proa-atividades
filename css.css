@@ -1,0 +1,520 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+
+    margin: 0;
+
+}
+
+nav {
+    max-width: 1920px;
+    top: 0;
+
+    padding: 30px 0;
+    width: 100%;
+
+    display: flex;
+
+    position: fixed;
+
+    background-color: #432096;
+
+    z-index: 99;
+
+}
+
+
+nav, ul{
+    text-align: center;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+nav a {
+
+    color: #fff;
+
+    margin: auto 20px auto 40px;
+
+    text-decoration: none;
+
+
+}
+
+nav li {
+
+    float: left;
+
+    list-style: none;
+
+    margin-left: 20px;
+
+
+}
+
+nav li :hover {
+    color: #7e2096;
+    
+
+}
+
+nav h3 {
+    float: center;
+    color: #fff;
+}
+
+.imagemhome {
+    text-align: center;
+}
+
+.frase-efeito {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 100px;
+    color: #432096;
+    margin-bottom: 100px;
+}
+
+.nossa_eq {
+    text-align: justify;
+    margin-bottom: 50px;
+    color: #203896;
+}
+
+#equipe {
+    font-size: xx-large;
+    margin-bottom: 20px;
+    color: #7e2096;
+}
+
+.home {
+    width: 1600px;
+    margin: 0 auto;
+
+}
+
+.imagemhome {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    
+
+
+}
+
+.seila, .vacinatexto {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: justify;
+    
+}
+div.box, span {
+	width: 380px;
+	display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+
+#equipe{
+    border-radius: 50%;
+}
+
+footer {
+    position: auto;
+    bottom: 100;
+    background-color: #432096;
+    color: #FFF;  
+    padding: 10px 0;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#rodape{
+    text-align: center;
+    padding-right: 15px;
+}
+
+#rodape2{
+    text-align: right;
+
+}
+
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 500px;
+    
+
+}
+
+.ok{
+    display: flex;
+}
+
+#menu{
+    background-color: aliceblue;
+}
+
+#vacina{
+    font-size: xx-large;
+    color: #203896;
+    margin-left: 20px;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#vacina2{
+    color: #7e2096;
+    font-size: xx-large;
+}
+
+#banho{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#tosa{
+    font-size: xx-large;
+    color: #7e2096;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+#texto-tosa{
+    color: #203896;
+    font-size: xx-large;
+    margin-right: 20px;
+    
+}
+
+.link{
+    text-decoration: none;
+}
+
+#CEP{
+    font-size: xx-large;
+    color: #203896;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.tituloend{
+    margin-bottom: 10px;
+}
+
+.lorem{
+    color: #203896;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+
+.textbar{
+    font-size: x-large;
+}
+
+.logo{
+    font-size: x-large;
+}
+
+#loja{
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    height: 1200px;
+    justify-content: space-between;
+}
+
+.produto1{
+    align-items: center;
+    text-align: center;
+}
+
+.maisvendido{
+    display: flex;
+    font-size: x-large;
+    color:#7e2096;
+
+}
+
+.produto2 {
+    text-decoration: none;
+
+}
+
+p :hover{
+    color: #203896;
+}
+
+
+#agenda{
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+.clock{
+    margin-bottom: 50px;
+    font-size: x-large;
+    color: #7e2096;
+}
+
+
+.aviso{
+    margin-top: 70px;
+    text-align: center;
+    color: red;
+
+}
+
+#fale{
+    margin-bottom: 700px;
+    text-align: center;
+}
+
+.fales{
+    font-size: 70px;
+    color: #7e2096;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+}
+
+.fundofale{
+    background: url(vetor.jpg)
+}
+
+.duvida{
+    color: #203896;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.Whatsapp{
+    font-size: x-large;
+    color: #203896;
+
+}
+
+.insta{
+    font-size: x-large;
+    color: #432096;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.facebook{
+    font-size: x-large;
+    color: #432096;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.titulo{
+    font-size: x-large;
+    color: #203896;
+    margin-top: 10px;
+
+}
+
+#adota{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.adotati{
+    color: #432096;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.filhote{
+    font-size: xx-large;
+    color: #203896;
+    margin-bottom: 20px;
+    
+}
+
+.adotar{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.adulto{
+    font-size: x-large;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    background-color: #7e2096f8;
+
+}
+
+.pai{
+    max-width: 1920px;
+    width: 100%;
+}
+
+.textoadotar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    color: #203896;
+}
+
+.adote{
+    margin-bottom: 100px;
+}
+
+img{
+    border-radius: 5px;
+}
