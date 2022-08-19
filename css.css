@@ -136,7 +136,6 @@ body {
 }
 
 nav {
-    max-width: 1920px;
     top: 0;
 
     padding: 30px 0;
@@ -259,7 +258,6 @@ footer {
     background-color: #432096;
     color: #FFF;  
     padding: 10px 0;
-    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
