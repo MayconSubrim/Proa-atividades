@@ -11,8 +11,8 @@
 
 <body id="agendahome">
     <nav>
-        <h3>MIMPETS</h3>
-        <ul>
+        <h3><a class="logo" href="mimpetshophome.html">MIMPETS</a></h3>
+        <ul class="ulnav">
 
             <li><a class="textbar" href="mimpetshophome.html">Home</a></li>
             <li><a class="textbar" href="loja.html">loja</a></li>
@@ -22,31 +22,39 @@
         </ul>
     </nav>
     <main id="agenda">
-        <h1 class="clock">Agenda um horario conosco!</h1>
-        <label for="nome">Nome completo:</label>
-        <input type="text" class="nome" name="nome" id="nome" required>
-        <hr>
-        <label for="phone">Telefone:</label>
-        <input type="tel" name="phone" id="phone" placeholder="somente numeros" required>
-        <hr>
-        <label for="mail">E-mail:</label>
-        <input type="email" name="mail" id="mail" required>
-        <hr>
-        <label for="pet">nome do pet:</label>
-        <input type="text" name="pet" id="pet">
-        <hr>
-        <label for="">Raça:</label>
-        <input type="radio" name="grupo">gato
-        <input type="radio" name="grupo">cachorro
-        <hr>
-        <label>Serviço</label>
-        <select name="serviço" id="serviço">
-            <option value="banho e tosa">banho e tosa</option>
-            <option value="consulta">consulta</option>
-            <option value="adoção">adoção</option>
-        </select>
-        <hr>
-        <input type="submit" value="enviar">
+        <div class="agendamento">
+            <h1 class="clock">Agenda um horario conosco!</h1>
+            <div class="form">
+                <label class="text" for="nome">Nome completo:</label>
+                <input class="input-agenda" type="text" class="nome" name="nome" id="nome" required>
+                
+                <label class="text" for="phone">Telefone:</label>
+                <input class="input-agenda" type="tel" name="phone" id="phone" placeholder="somente numeros" required>
+                
+                <label class="text" for="mail">E-mail:</label>
+                <input class="input-agenda" type="email" name="mail" id="mail" required>
+                
+                <label class="text" for="pet">nome do pet:</label>
+                <input class="input-agenda" type="text" name="pet" id="pet">
+                
+            </div>
+            <div class="raca">
+                <label class="text" for="">Raça:</label>
+                <input type="radio" name="grupo">gato
+                <input type="radio" name="grupo">cachorro
+            </div>
+            
+            <div class="opcao">
+                <label class="text">Serviço:</label>
+                <select class="input-agenda" name="serviço" id="serviço">
+                    <option value="banho e tosa">banho e tosa</option>
+                    <option value="consulta">consulta</option>
+                    <option value="adoção">adoção</option>
+                </select>
+            </div>
+            
+            <button class="enviar">enviar</button>
+        </div>
         <p class="aviso">*Após o envio das informações, sera enviado no wahtsapp do client os horarios disponivel para
             atendimento*
         </p>
