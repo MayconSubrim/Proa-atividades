@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/f48e64f714.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     
     <div id="menu">
         <nav>
-            <h3><a class="logo" href="mimpetshophome.html">MIMPETS</a></h3>
+            <input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+        <h3><a class="logo" href="mimpetshophome.html">MIMPETS</a></h3>
             <ul class="ulnav">
 
                 <li><a class="textbar" href="mimpetshophome.html">Home</a></li>
@@ -27,7 +32,7 @@
 
 
             <h1 class="frase-efeito">Aqui na mimpets o seu bixinho tem um tratamento especial</h1>
-            <img class="imagemhome" src="Sem título.png" alt="gatinhosnacaixa">
+            <img class="imagembunner" src="Sem título.png" alt="gatinhosnacaixa">
 
             <h2 id="vacina2">Por que vacinar seu Pet?</h2>
             <div class="seila">
@@ -58,10 +63,16 @@
                 <hr>
             </div>
             <div id="CEP">
-                <h3 class="tituloend">Veja a unidade mais proxima de você</h3>
-                <label for="endereco">CEP</label>
-                <input type="tel" name="endereco" id="endereco" placeholder="00000-000" required> <input type="submit"
-                    value="enviar">
+                <span>
+                    <h3 class="tituloend">Veja a unidade mais proxima de você</h3>
+                </span>
+                
+                <div class="textozada">
+                    <label for="endereco">CEP</label>
+                    
+                    <input class="CEP" type="tel" name="endereco" id="endereco" placeholder="00000-000" required> <input class="enviarzada" type="submit"
+                        value="enviar">
+                </div>
             </div>
 
             <div class="nosa_eq">
@@ -86,20 +97,28 @@
 
             <div class="ok">
                 <div class="box">
-                    <img id="equipe" src="nossa equipe/History-Rengoku-Kyojuro.jpg" width="380" />
-                    <span>Rengoku</span>
+                    <figure>
+                        <img id="equipe" src="nossa equipe/History-Rengoku-Kyojuro.jpg" width="380" />
+                        <figcaption>Rengoku</figcaption>
+                    </figure>
                 </div>
                 <div class="box">
-                    <img id="equipe" src="nossa equipe/satoru.gif" width="380" />
-                    <span>Satoru</span>
+                    <figure>
+                        <img id="equipe" src="nossa equipe/satoru.gif" width="380" />
+                        <figcaption>Satoru</figcaption>
+                    </figure>
                 </div>
                 <div class="box">
-                    <img id="equipe" src="nossa equipe/sanji.png" width="380" />
-                    <span>Sanji</span>
+                    <figure>
+                        <img id="equipe" src="nossa equipe/sanji.png" width="380" />
+                        <figcaption>sanji</figcaption>
+                    </figure>
                 </div>
                 <div class="box">
-                    <img id="equipe" src="nossa equipe/Levi.jpg" width="380" />
-                    <span>Levi</span>
+                    <figure>
+                        <img id="equipe" src="nossa equipe/Levi.jpg" width="380" />
+                        <figcaption>Levi</figcaption>
+                    </figure>
                 </div>
             </div>
 
@@ -109,15 +128,18 @@
 
         </main>
         <footer>
-            <table class="footer">
-                <tr>
-                    <td id="rodape">MimPets comercio e petshop S.A
-                        CNPJ: 10.864.900/0001-23
-                        Av. dos joãozinho 12901 - 11º andar, bairro do fulano, São Paulo - SP, 55566-555</td>
-                    <td id="rodape2">A Mimpets garante segurança para suas informações pessoais e financeiras
-                        Copyright 2022 © Todos os direitos reservados à Mimpets</td>
-                </tr>
-            </table>
+            <div class="iconesawesome">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="footertext">
+                <p>info - suporte - marketing</p>
+                <p>Termos de Uso - politica de privacidade</p>
+                <span class="copy">
+                    <p>₢ 2022 Maycon Subrim</p>
+                </span>
+            </div>
         </footer>
     </div>
 </body>

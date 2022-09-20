@@ -124,6 +124,7 @@ q:after {
     content: none;
 }
 
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -191,6 +192,7 @@ nav li {
 nav li :hover {
     color: #7e2096;
     transform: scale(1.1);
+    
 
 }
 
@@ -198,9 +200,17 @@ nav h3 {
     float: center;
     color: #fff;
 }
-
-.imagemhome {
-    text-align: center;
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
 }
 
 .frase-efeito {
@@ -223,10 +233,17 @@ nav h3 {
     color: #7e2096;
 }
 
-.home {
-    width: 1600px;
-    margin: 0 auto;
+.imagembunner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
 
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .imagemhome {
@@ -235,7 +252,7 @@ nav h3 {
     margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 8px;
-    
+    width: 600px;
 
 
 }
@@ -247,8 +264,75 @@ nav h3 {
     text-align: justify;
     
 }
+
+@media screen and (max-width: 980px) {
+    .seila, .vacinatexto{
+        flex-direction: column;
+    }
+    #banho{
+        flex-direction: column;
+    }
+
+    .imagemhome{
+        width: 100%;
+    }
+
+    nav h3{
+        margin: auto 0;
+    }
+
+    .checkbtn {
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		background: #1d075f;
+		top: 70px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+    .cate ul{
+        display: flex;
+        margin-top: 30px;
+        margin-right: 20px;
+        justify-content: space-around; 
+    }
+    .cate :nth-child(2){
+        display: none;
+    } 
+	nav ul li{
+		display: block;
+		margin: 50px 100px;
+		line-height: 50px;
+        text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+
+    .imagemtexto{
+        font-size: large;
+    }
+
+    .maisvendido input{
+        width: 150px;
+    }
+
+    #loja{
+        margin-bottom: 10px;
+    }
+}
 div.box, span {
-	width: 380px;
 	display: inline-block;
     margin: 0 auto;
     text-align: center;
@@ -258,18 +342,46 @@ div.box, span {
 
 #equipe{
     border-radius: 50%;
+    width: 290px;
 }
 
 footer {
-    position: auto;
-    bottom: 100;
-    background-color: #432096;
-    color: #FFF;  
-    padding: 10px 0;
+    display: flex;
     width: 100%;
-    margin: 0 auto;
+    height: 200px;
+    background-color: #7e2096;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: white;
+}
+
+.iconesawesome{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footertext{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    flex-direction: column;
     text-align: center;
-    padding-top: 40px;
+    
+}
+.footertext :nth-child(2){
+    margin-top: 10px;
+}
+.footertext :nth-child(3){
+    color: #d3d3d3;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 *{
@@ -286,16 +398,12 @@ footer {
 
 }
 
-.footer{
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 500px;
-    
-
-}
 
 .ok{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #menu{
@@ -350,6 +458,36 @@ body{
     margin-bottom: 50px;
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textozada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CEP{
+    border: 0;
+    margin-right: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    height: 25px;
+    outline: 0;
+}
+
+.enviarzada{
+    border: 0;
+    height: 25px;
+    border: 1px solid #d3d3d3;
+    color: #6b6a6a;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .tituloend{
@@ -377,9 +515,11 @@ body{
     margin-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
-    width: 1600px;
+    max-width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .produto1{
@@ -394,7 +534,13 @@ body{
     margin-top: 50px;
     justify-content: center;
     font-size: xx-large;
+    justify-content: space-around;
 
+}
+
+.imagemtexto{
+    display: flex;
+    align-items: center;
 }
 
 .produto2 {
@@ -410,7 +556,7 @@ p :hover{
 #agenda{
     margin-top: 100px;
     margin-bottom: 500px;
-    width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -479,7 +625,7 @@ p :hover{
 }
 
 #adota{
-    width: 1600px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -563,7 +709,6 @@ img{
 
 .input{
     border-radius: 10px;
-    margin-left: 250px;
     width: 300px;
     height: 40px;
 }
@@ -640,10 +785,9 @@ img{
 }
 #listacate{
     display: flex;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-right: 20px;
-    justify-content: space-around;
-   
+    justify-content: space-around; 
 }
 
 .licate{
@@ -662,14 +806,10 @@ img{
     color: #7e2096;
 }
 
-.buner{
-    width: 1600px;
-    height: 300px;
-    margin: 0 auto;
-}
-
 .imgloja{
     margin-top: 90px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .hover:hover{
