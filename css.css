@@ -305,7 +305,7 @@ nav h3 {
 	nav ul li{
 		display: block;
 		margin: 50px 100px;
-		line-height: 50px;
+		
         text-align: center;
 	}
 
@@ -331,7 +331,84 @@ nav h3 {
     #loja{
         margin-bottom: 10px;
     }
+
+    .agendamento{
+        max-width: 300px;
+    }
+    .agendamento input{
+        max-width: 300px;
+    }
+
+    .agendamento select{
+        max-width: 300px;
+    }
+
+    .agendamento button{
+        margin-top: 0;
+    }
+    .text{
+        max-width: 300px;
+    }
+
+    .form{
+        max-width: 300px;
+    }
+
+    .opcao{
+        max-width: 300px;
+    }
+
+    div .adotar{
+        padding: 0;
+    }
 }
+
+/* @media screen and (max-width:545px) {
+    nav h3{
+        margin: auto 0;
+    }
+
+    .checkbtn {
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		background: #1d075f;
+		top: 70px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+    .cate ul{
+        display: flex;
+        margin-top: 30px;
+        margin-right: 20px;
+        justify-content: space-around; 
+    }
+    .cate :nth-child(2){
+        display: none;
+    } 
+	nav ul li{
+		display: block;
+		margin: 50px 100px;
+		line-height: 50px;
+        text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+} */
+
+
 div.box, span {
 	display: inline-block;
     margin: 0 auto;
@@ -352,7 +429,7 @@ footer {
     background-color: #7e2096;
     justify-content: center;
     flex-direction: column;
-
+    
 }
 
 .fa-brands{
@@ -555,8 +632,9 @@ p :hover{
 
 #agenda{
     margin-top: 100px;
-    margin-bottom: 500px;
-    width: 1200px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -625,7 +703,8 @@ p :hover{
 }
 
 #adota{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -649,7 +728,8 @@ p :hover{
     text-align: center;
     margin: 0 auto;
     background-color: white;
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -665,8 +745,9 @@ p :hover{
 }
 
 .pai{
-    max-width: 1920px;
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .textoadotar{
@@ -742,16 +823,23 @@ img{
 .raca{
     margin-bottom: 20px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    
 }
+
 
 .opcao{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    justify-items: center;
+    align-items: center;
     width: 500px;
 }
 
+
 .enviar{
+    margin-top: 20px;
     width: 50px;
     background-color: #432096;
     border-radius: 5px;
@@ -812,11 +900,23 @@ img{
     width: 100%;
 }
 
+.hover{
+    border: 0;
+    width: 100px;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: #203896;
+    color: #FFF;
+}
+
 .hover:hover{
     background-color: #432096;
     color: white;
 }
 
 .bunneradote{
+    display: block;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 90px;
 }
