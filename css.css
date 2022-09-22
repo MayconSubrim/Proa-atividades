@@ -902,11 +902,12 @@ img{
 
 .hover{
     border: 0;
-    width: 100px;
+    width: 70px;
     border-radius: 15px;
     margin: 5px;
     background-color: #203896;
     color: #FFF;
+    cursor: pointer;
 }
 
 .hover:hover{
